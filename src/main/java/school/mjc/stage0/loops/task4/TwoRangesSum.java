@@ -9,15 +9,15 @@ public class TwoRangesSum {
         } else {
             int skippedSum = 0;
             int countedSum = 0;
-            for (int i = 1; i < lastInRow; i++) {
+            for (int i = 1; i <= lastInRow; i++) {
                 if (i <= numberToSkip) {
                     skippedSum += i;
                 } else {
                     countedSum += i;
                 }
             }
-            System.out.println("skipped sum is number" + skippedSum);
-            System.out.println("counted sum is number" + countedSum);
+            System.out.println("skipped sum is number " + skippedSum);
+            System.out.println("counted sum is number " + countedSum);
         }
     }
 }
